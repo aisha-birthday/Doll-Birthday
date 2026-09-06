@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+  --bg:#100b1d;--bg2:#1a102d;--white:#fff9ff;--muted:#cfc2da;
+  --pink:#ff8fc7;--violet:#a98cff;--gold:#ffd58a;
+}
+*{box-sizing:border-box} html,body{margin:0;min-height:100%;background:var(--bg);color:var(--white)}
+body{font-family:"Plus Jakarta Sans",sans-serif;overflow-x:hidden}
+#stars{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+.aurora{position:fixed;inset:-20%;z-index:0;pointer-events:none;background:
+radial-gradient(circle at 15% 20%,rgba(255,105,180,.15),transparent 25%),
+radial-gradient(circle at 80% 25%,rgba(135,100,255,.16),transparent 28%),
+radial-gradient(circle at 50% 80%,rgba(255,190,100,.08),transparent 30%);filter:blur(25px);animation:float 12s ease-in-out infinite alternate}
+@keyframes float{to{transform:translate(4%,3%) scale(1.08)}}
+main{position:relative;z-index:1;min-height:100vh}
+.screen{display:none;min-height:100vh;padding:24px;align-items:center;justify-content:center;text-align:center;animation:fade .8s ease}
+.screen.active{display:flex}@keyframes fade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.glass,.letter-card,.reveal-card{background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.14);box-shadow:0 25px 80px rgba(0,0,0,.35);backdrop-filter:blur(18px)}
+.hero-card{max-width:760px;width:100%;padding:70px 35px;border-radius:34px;position:relative;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(3px);opacity:.6}.orb1{width:230px;height:230px;background:#9a6cff;top:8%;left:-5%;animation:orb 7s ease-in-out infinite}.orb2{width:190px;height:190px;background:#ff76ba;right:-4%;bottom:8%;animation:orb 9s ease-in-out infinite reverse}@keyframes orb{50%{transform:translateY(30px) scale(1.15)}}
+.tiny{font:500 11px "DM Mono",monospace;letter-spacing:2px;color:var(--gold);line-height:1.7}
+.gift-mark{font-size:42px;color:var(--gold);animation:spinPulse 4s ease-in-out infinite}@keyframes spinPulse{50%{transform:rotate(180deg) scale(1.25);filter:drop-shadow(0 0 15px var(--gold))}}
+h1,h2,h3{font-family:"Playfair Display",serif;margin:16px 0}h1{font-size:clamp(48px,9vw,94px);line-height:.95}h1 span,h2 span{font-style:italic;color:var(--pink)}h2{font-size:clamp(37px,6vw,68px);line-height:1.04}.lead,.story-text,p{color:var(--muted);line-height:1.85;font-size:16px}
+.primary,.next,.gift-button{border:0;cursor:pointer;font:600 14px "Plus Jakarta Sans";transition:.3s}
+.primary{margin-top:25px;background:linear-gradient(135deg,#fff,#ffd5ec);color:#281328;padding:16px 25px;border-radius:999px;box-shadow:0 12px 35px rgba(255,143,199,.2)}.primary:hover,.next:hover{transform:translateY(-3px) scale(1.02)}
+.from{font-size:12px;margin-top:25px!important;opacity:.75}
+.story-wrap,.wish-wrap,.reasons-wrap,.surprise-wrap{max-width:780px}.line{width:90px;height:1px;background:linear-gradient(90deg,transparent,var(--pink),transparent);margin:28px auto}
+.next{margin-top:28px;background:transparent;color:var(--white);border-bottom:1px solid var(--pink);padding:12px 4px}
+.letter-card{max-width:720px;padding:50px 32px;border-radius:10px;text-align:left;position:relative}.letter-top{font:11px "DM Mono";letter-spacing:2px;color:var(--pink);margin-bottom:30px}.letter-card p{font-size:15px}.signature{font-family:"Playfair Display";font-style:italic;color:var(--white)!important;font-size:20px!important}
+.star-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin:35px auto}.memory{width:74px;height:74px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:var(--gold);font-size:30px;cursor:pointer;transition:.4s}.memory:hover,.memory.used{transform:scale(1.15) rotate(25deg);background:rgba(255,213,138,.15);box-shadow:0 0 30px rgba(255,213,138,.3)}
+.message-box{min-height:90px;max-width:600px;margin:auto;padding:25px;border-radius:20px;background:rgba(255,255,255,.06);color:#fff;display:flex;align-items:center;justify-content:center;line-height:1.6}
+.final-next{display:none}.final-next.show{display:inline-block}
+.cake{font-size:70px;filter:drop-shadow(0 0 30px rgba(255,143,199,.4));animation:bounce 2s ease infinite}@keyframes bounce{50%{transform:translateY(-10px) rotate(3deg)}}
+.gift-button{display:flex;gap:15px;align-items:center;justify-content:center;margin:34px auto 12px;padding:19px 27px;border-radius:20px;background:linear-gradient(135deg,#ff75b6,#8e73ff);color:white;box-shadow:0 20px 50px rgba(146,98,255,.3);font-size:15px}.gift-button:hover{transform:scale(1.05)}.gift-icon{font-size:27px}.wish-wrap small{color:#9f92ad}
+.confetti-word{font:700 clamp(14px,3vw,22px) "DM Mono";letter-spacing:6px;color:var(--gold);margin-bottom:18px;animation:pulse 1.5s infinite}@keyframes pulse{50%{opacity:.5;letter-spacing:9px}}
+.reveal-card{max-width:700px;margin:30px auto;padding:42px 28px;border-radius:28px}.heart{font-size:40px;color:#ff70a9;animation:beat 1s infinite}@keyframes beat{50%{transform:scale(1.25)}}
+.reveal-small{font:11px "DM Mono";letter-spacing:2px;color:var(--gold)}h3{font-size:clamp(34px,6vw,58px)}h3 span{color:var(--pink);padding:0 10px}.big-reveal{font-size:19px!important;color:#fff!important}.ending{font-family:"Playfair Display";font-style:italic;font-size:22px!important;color:#fff!important}
+@media(max-width:600px){.hero-card{padding:58px 20px;border-radius:26px}.letter-card{padding:38px 22px}.screen{padding:16px}.memory{width:62px;height:62px}.gift-button{padding:17px 18px}.reveal-card{padding:32px 18px}}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#130d24">
+  <title>Happy Birthday, Aisha ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="aurora"></div>
+
+  <main>
+    <!-- OPENING -->
+    <section class="screen active" id="opening">
+      <div class="orb orb1"></div><div class="orb orb2"></div>
+      <div class="glass hero-card">
+        <p class="tiny">7 SEPTEMBER • A DAY THE UNIVERSE GOT A LITTLE BRIGHTER</p>
+        <div class="gift-mark">✦</div>
+        <h1>Happy Birthday,<br><span>Aisha</span> 🤍</h1>
+        <p class="lead">This isn't just a birthday wish.<br>It's a small journey made for my sister.</p>
+        <button class="primary" id="startBtn">Open your surprise <span>→</span></button>
+        <p class="from">Made with a lot of love — Arhan</p>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="screen" id="story">
+      <div class="story-wrap">
+        <p class="tiny">CHAPTER ONE</p>
+        <h2>Some relationships<br>don't need blood<br>to become <em>family.</em></h2>
+        <div class="line"></div>
+        <p class="story-text">
+          We met online... and somehow, without planning it, you became one of the most special people in my life.
+        </p>
+        <button class="next">Tell me more <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- EMOTIONAL LETTER -->
+    <section class="screen" id="letter">
+      <div class="letter-card">
+        <div class="letter-top">A LETTER FOR AISHA</div>
+        <h2>My sister,<br>my doll. 🫶</h2>
+        <p>
+          Real life gave me a brother, but never a sister. And you... you had no brother or sister beside you either.
+        </p>
+        <p>
+          Maybe that's why our bond feels so strange and so beautiful at the same time — because two people who were missing a relationship somehow found it in each other.
+        </p>
+        <p>
+          You are not my “online sister”. You are simply <strong>my sister.</strong> And no distance, no screen, and no explanation can make that feeling smaller.
+        </p>
+        <p class="signature">— Your brother, Arhan 🤍</p>
+        <button class="next">There's one more thing... <span>✦</span></button>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MEMORY -->
+    <section class="screen" id="reasons">
+      <div class="reasons-wrap">
+        <p class="tiny">A LITTLE GAME FOR THE BIRTHDAY GIRL</p>
+        <h2>Tap the stars.<br>Each one knows something. ✨</h2>
+        <div class="star-grid">
+          <button class="memory" data-message="You made someone feel what it means to have a sister. 🤍">✦</button>
+          <button class="memory" data-message="Your place in my life was never temporary. 🫶">✦</button>
+          <button class="memory" data-message="You are my special sister... my doll. 🧸🤍">✦</button>
+          <button class="memory" data-message="A real bond doesn't need the same blood. It needs the same heart. ❤️">✦</button>
+          <button class="memory" data-message="Today is your day — and you deserve to feel loved, remembered and celebrated. 🎂">✦</button>
+        </div>
+        <div class="message-box" id="messageBox">Choose a star, birthday girl ✨</div>
+        <button class="next final-next">I found them all... <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- BIRTHDAY WISH -->
+    <section class="screen" id="wish">
+      <div class="wish-wrap">
+        <div class="cake">🎂</div>
+        <p class="tiny">MAKE A WISH, AISHA</p>
+        <h2>May this year bring you<br><span>everything your heart quietly asks for.</span></h2>
+        <p>
+          More smiles. More peace. More beautiful memories. And people who remind you every day how precious you are.
+        </p>
+        <p>
+          Happy Birthday to the girl who entered my life unexpectedly... and became family. 🤍
+        </p>
+        <button class="gift-button" id="giftBtn">
+          <span class="gift-icon">🎁</span>
+          <span>One final gift is waiting...</span>
+        </button>
+        <small>Don't press it unless you're ready for the biggest surprise 👀</small>
+      </div>
+    </section>
+
+    <!-- FINAL SURPRISE -->
+    <section class="screen" id="surprise">
+      <div class="surprise-wrap">
+        <div class="confetti-word">SURPRISE!</div>
+        <p class="tiny">THE SECRET I SAVED FOR LAST</p>
+        <h2>Aisha...<br>remember someone you always wanted as your <span>bhabhi?</span> 👀</h2>
+        <div class="reveal-card">
+          <div class="heart">♥</div>
+          <p class="reveal-small">YOUR BROTHER'S HEART HAS A NEW HOME</p>
+          <h3>Arhan <span>×</span> Butterfly 🦋</h3>
+          <p>
+            Yes, doll... the girl you wanted to become my girlfriend — and your bhabhi — is now officially my girlfriend. 🥹❤️
+          </p>
+          <p class="big-reveal">
+            So your birthday surprise is this:<br>
+            <strong>You finally got your bhabhi. 🦋🤍</strong>
+          </p>
+        </div>
+        <p class="ending">Happy Birthday, my most special sister. My doll. Always. ♾️</p>
+        <button class="primary restart" id="restartBtn">Experience it again ↻</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
